@@ -3,12 +3,48 @@
 body {
   height: 100vh;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.right-links {
+  display: flex;
+  justify-content:end;
+  align-items: end;
+  gap: 15px;
+  padding: 5px;
+  margin: 0;
+}
+
+.left-links {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 15px;
+  padding: 10px;
+  margin: 0;
 }
 
 img {
   width: 600px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 15px;
 }
 
 button {
@@ -16,6 +52,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
 }
 
 input {
@@ -24,3 +61,20 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+  .footer {
+    padding: 5px;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
